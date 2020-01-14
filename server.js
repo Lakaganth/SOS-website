@@ -1,8 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-
-// Connection to Mongo DB
-const connectDB = require("./config/db");
+const mongoose = require("mongoose");
+require("dotenv").config({ path: "variables.env" });
+// // Connection to Mongo DB
+// const connectDB = require("./config/db");
 
 //GraphQL
 const graphqlHTTP = require("express-graphql");
@@ -11,13 +12,23 @@ const graphqlResolver = require("./graphql/resolvers");
 
 const app = express();
 
-// Allow cross origin
-
-app.use(cors());
-
 app.use(express.json({ extended: false }));
 
-connectDB();
+// connectDB();
+// Connects to database
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true
+  })
+  .then(() => console.log("DB connected"))
+  .catch(err => console.error(err));
+
+// Allow cross origin
+
+app.use(cors("*"));
 
 app.use(
   "/graphql",

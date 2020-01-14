@@ -40,6 +40,7 @@ import HeaderNav from "./components/header/HeaderNav";
 
 // Server Connection
 const client = new ApolloClient({
+  // uri: "https://git.heroku.com/schoolofsports.git"
   uri: "http://localhost:5000/graphql"
 });
 
