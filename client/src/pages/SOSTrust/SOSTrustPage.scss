@@ -1,0 +1,76 @@
+.trust-card {
+  // width: 100%;
+  // border: 1px solid rgb(251, 255, 11);
+  // color: black;
+  // -webkit-box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.78);
+  // box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.78);
+  margin: 20vh 0;
+  // padding: 2em 1em;
+  // border-radius: 10px;
+  // background: #fff;
+
+  //   background: url("https://i.ibb.co/hgmN0qK/Asset-2.png");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  .trust-head {
+    border: 1px solid rgb(251, 255, 11);
+    border-radius: 50px;
+    img {
+      height: 100px;
+      width: 100px;
+      display: none;
+    }
+  }
+  .trust-text {
+    margin: 4vh 0;
+    line-height: 20px;
+  }
+  .donate-btn {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+.trust-head {
+  text-align: center;
+}
+
+.trust-header {
+  margin: 1em 0;
+}
+
+.trust-text {
+  margin: 1em 0;
+}
+
+.trust-list {
+  list-style: circle;
+  padding-left: 1em;
+}
+
+.trust-span {
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+@media screen and (min-width: 1000px) {
+  .trust-card {
+    height: 60vh;
+  }
+
+  .trust-head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-header {
+    align-self: center;
+    justify-self: end;
+  }
+
+  .trust-list {
+    list-style: circle;
+    padding-left: 1em;
+  }
+}

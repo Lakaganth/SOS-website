@@ -1,0 +1,76 @@
+// .gal {
+//   width: 100%;
+//   height: 75vh;
+// }
+.g-card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.596);
+  margin-bottom: 5vh;
+}
+
+.g-name {
+  padding: 40px 0;
+  font-size: 2.2rem;
+}
+.g-date {
+  font-size: 1rem;
+}
+
+.del-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1vh;
+  right: 5vw;
+  color: white;
+}
+
+.gal-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery-card {
+  padding-top: 20vh;
+}
+
+.g-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.g-add-link {
+  width: 80%;
+  padding: 30vh 0;
+}
+
+.gal-form-container {
+  padding-top: 20vh;
+}
+
+.gal-image-container {
+  width: 90%;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.gallery-buttons {
+  width: 150px;
+}
+
+// Tablet
+@media (min-width: 426px) and (max-width: 768px) {
+  .g-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .g-date {
+    display: flex;
+    flex-direction: column;
+  }
+}

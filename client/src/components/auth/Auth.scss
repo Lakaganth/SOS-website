@@ -1,0 +1,20 @@
+.auth-container {
+  padding-top: 10vh;
+
+  .admin-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .sign-in-container {
+    width: 80%;
+    text-align: center;
+    padding-left: 20vw;
+
+    h1 {
+      font-size: 2rem;
+      padding-bottom: 1vh;
+    }
+  }
+}

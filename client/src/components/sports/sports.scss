@@ -1,0 +1,107 @@
+.sport-container {
+  background: #2a0d2e;
+  background-color: #21d4fd;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  min-height: 100vh;
+}
+
+.sport-div {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+
+.sports-title {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+
+.sport-wrapper {
+  padding-top: 20vh;
+
+  .sport-form {
+    width: 70vw;
+    background: #804ae2;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 50vh;
+  }
+}
+
+input {
+  color: rgb(255, 255, 255);
+}
+
+// Sports Card
+
+.sport-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-sport {
+  width: 100%;
+  height: 25vh;
+  padding: 1rem;
+  border: rgb(200, 243, 10) 1px solid;
+  border-radius: 20px;
+  margin: 0.7rem 0;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  // background-position: left top;
+  background-size: cover;
+}
+
+//Sports Card BG
+
+.cricket {
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(#080808, 0.55), rgba(#480c80, 0.45)),
+    url("../../assets/img/sport-card-bgimg/cricket-card-bg.jpg");
+}
+
+.tennis {
+  background-image: linear-gradient(rgba(#080808, 0.55), rgba(#480c804b, 0.35)),
+    url("../../assets/img/sport-card-bgimg/tennis-card-bg.jpg");
+}
+
+.table {
+  background-image: linear-gradient(rgba(#080808, 0.55), rgba(#480c80, 0.45)),
+    url("../../assets/img/sport-card-bgimg/tt-card-bg.jpg");
+}
+
+.football {
+  background-image: linear-gradient(rgba(#080808, 0.55), rgba(#480c80, 0.45)),
+    url("../../assets//img/sport-card-bgimg/football-1-card-bg.jpg");
+}
+
+.basketball {
+  background-image: linear-gradient(rgba(#080808, 0.55), rgba(#480c80, 0.45)),
+    url("../../assets/img/sport-card-bgimg/basket-ball-card-bg.jpg");
+}
+
+.swimming {
+  background-image: linear-gradient(rgba(#080808, 0.55), rgba(#480c80, 0.45)),
+    url("../../assets/img/sport-card-bgimg/swimming-card-bg.jpg");
+}
+
+@media screen and (min-width: 1000px) {
+  .sport-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .sports-header {
+    padding: 2em;
+  }
+  .card-sport {
+    height: 50vh;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .sport-card-wide {
+    height: 45vh;
+  }
+}

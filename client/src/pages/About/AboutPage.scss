@@ -1,0 +1,191 @@
+.about-container {
+  background: rgb(102, 67, 132);
+  background: radial-gradient(
+    circle,
+    rgba(102, 67, 132, 1) 0%,
+    rgba(51, 34, 66, 1) 100%
+  );
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30vh;
+}
+
+.director-card,
+.founder-card {
+  background-color: rgba(0, 0, 0, 0.596);
+  margin-bottom: 10em;
+  position: relative;
+  width: 100%;
+  border: 1px #fff solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.78);
+  padding: 2vh 2vw;
+  h2 {
+    padding: 4.5vh 0 2vh;
+  }
+  h3 {
+    padding: 15px 0;
+  }
+}
+
+.founder-profile {
+  width: 150px;
+  height: 150px;
+  border: 1px white solid;
+  background: url("https://i.pravatar.cc/150?img=56");
+  background-size: contain;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -30%;
+  left: 30%;
+}
+
+.director-profile {
+  width: 150px;
+  height: 150px;
+  border: 1px white solid;
+  background: url("https://i.pravatar.cc/150?img=10");
+  background-size: contain;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -30%;
+  left: 30%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-container {
+    padding-top: 40vh;
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+  }
+
+  .director-card,
+  .founder-card {
+    width: 45%;
+    border: 1px #fff solid;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.78);
+    h2 {
+      margin: 2vh 0;
+      text-align: center;
+    }
+    h3 {
+      margin-bottom: 1vh;
+      text-align: center;
+    }
+  }
+  .founder-profile {
+    top: -10vh;
+    left: 10vw;
+  }
+
+  .director-profile {
+    top: -10vh;
+    left: 10vw;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .founder-profile {
+    top: -12vh;
+    left: 14vw;
+  }
+
+  .director-profile {
+    top: -12vh;
+    left: 14vw;
+  }
+  .about-container {
+    padding-top: 40vh;
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+  }
+
+  .director-card,
+  .founder-card {
+    width: 45%;
+    border: 1px #fff solid;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.78);
+    h2 {
+      margin: 2vh 0;
+      text-align: center;
+    }
+    h3 {
+      margin-bottom: 1vh;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .founder-profile {
+    top: -12vh;
+    left: 18vw;
+  }
+
+  .director-profile {
+    top: -12vh;
+    left: 18vw;
+  }
+  .about-container {
+    padding-top: 40vh;
+    height: 100vh;
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+  }
+
+  .director-card,
+  .founder-card {
+    width: 45%;
+    border: 1px #fff solid;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.78);
+    h2 {
+      margin: 2vh 0;
+      text-align: center;
+      font-size: 2rem;
+    }
+    h3 {
+      margin-bottom: 1vh;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

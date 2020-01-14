@@ -1,0 +1,46 @@
+.footer-email {
+  height: 70px;
+  width: 70px;
+}
+
+.footer-fb,
+.footer-insta {
+  height: 70px;
+  width: 70px;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer-email-section {
+  display: flex;
+  justify-content: space-around;
+
+  h3 {
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+}
+
+.social-footer-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 2vh 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10rem;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 2vh;
+  }
+
+  .contacts-container {
+    padding-top: 10vh;
+    padding-right: 5vw;
+  }
+}

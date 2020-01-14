@@ -1,0 +1,578 @@
+$dot-color: #000000;
+$dot-color1: #313131;
+$bg-color1: #161616;
+$bg-color2: #142f4e;
+$bg-color3: #318b99;
+$bg-color4: #61236e;
+// Dimensions
+$dot-size: 1.4px;
+$dot-size1: 1.4px;
+$dot-space: 5px;
+
+.banner-container {
+  // visibility: hidden;
+  background-color: #161616;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+        90deg,
+        $bg-color1 ($dot-space - $dot-size1),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bg-color1 ($dot-space - $dot-size1), transparent 1%) center,
+    $dot-color1;
+  background-size: $dot-space $dot-space;
+  .red-flares {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: -45px;
+  }
+  .red-flames {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: -25px;
+    left: -100px;
+  }
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+
+    h3 {
+      font-size: 65px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 5vw;
+    }
+    p {
+      font-family: "Julius Sans One", sans-serif;
+      width: 45vw;
+      text-align: center;
+      font-weight: 700;
+      z-index: 10;
+    }
+  }
+  .banner-logo {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    bottom: 20vh;
+    right: -20vw;
+  }
+}
+
+.bio-container {
+  background-color: #142f4e;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+        90deg,
+        $bg-color2 ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bg-color2 ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+  .bio-bg {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/img/landingPage/yellowStripes.png");
+    // background-position: center center;
+    background-size: cover;
+    filter: blur(5px);
+    background-position-x: -60vw;
+    background-position-y: -40%;
+    background-attachment: fixed;
+    position: absolute;
+    // top: 10%;
+    // left: 0;
+  }
+
+  .bio-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20vh;
+    z-index: 10;
+    h3 {
+      font-size: 35px;
+      color: #ff02ff;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 900;
+      padding-bottom: 10vh;
+      z-index: 10;
+    }
+    p {
+      font-family: "Julius Sans One", sans-serif;
+      text-transform: lowercase;
+      font-size: 16px;
+      width: 60vw;
+      text-align: center;
+      font-weight: 600;
+      // z-index: 10;
+      padding: 5vw;
+      background-color: rgba(157, 157, 163, 0.171);
+      border-radius: 20px;
+    }
+    .landing-gal-buton {
+      width: 150px;
+      z-index: 40;
+      margin-top: 5vh;
+      margin-right: 15vw;
+    }
+  }
+
+  .gym-girl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+.team-container {
+  background: linear-gradient(
+        90deg,
+        $bg-color3 ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bg-color3 ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .team-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    h3 {
+      font-size: 35px;
+      color: #00ffaa;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 900;
+      z-index: 10;
+    }
+    p {
+      font-family: "Julius Sans One", sans-serif;
+      text-transform: lowercase;
+      font-size: 16px;
+      width: 60vw;
+      text-align: center;
+      font-weight: 600;
+      z-index: 10;
+      padding: 5vw;
+      background-color: rgba(12, 12, 12, 0.171);
+      border-radius: 20px;
+    }
+  }
+
+  .runner {
+    position: absolute;
+    max-width: 473px;
+    max-height: 604px;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+  }
+  .stripes {
+    width: 100%;
+    height: 100%;
+    background: url("../../assets//img/landingPage/stripes.png");
+    background-position: center center;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+  }
+}
+
+.testimonial-container {
+  background: linear-gradient(
+        90deg,
+        $bg-color4 ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bg-color4 ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .testi-header {
+    h3 {
+      font-size: 35px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 900;
+      z-index: 20;
+      padding-top: 10vh;
+      padding-bottom: 2vh;
+    }
+  }
+  .test-landing-cards {
+    z-index: 10;
+    width: 80%;
+    position: absolute;
+    margin: 0 10vw;
+  }
+
+  .dancer {
+    width: 327px;
+    height: 436px;
+    position: absolute;
+    bottom: 0;
+    right: -10vw;
+    z-index: 5;
+  }
+  .circles {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/img/landingPage/bgCricle.png");
+    background-position-x: 120px;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 05;
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-container {
+    .banner-text {
+      h3 {
+        font-size: 75px;
+      }
+      p {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 40px;
+      }
+    }
+    .banner-logo {
+      width: 350px;
+      height: 350px;
+      position: absolute;
+      bottom: 10vh;
+      right: -5vw;
+    }
+  }
+
+  .bio-container {
+    .bio-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20vh;
+      padding-left: 5vw;
+      h3 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
+    .gym-girl {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      bottom: 10vh;
+      left: 0vw;
+    }
+  }
+
+  .team-container {
+    background: linear-gradient(
+          90deg,
+          $bg-color3 ($dot-space - $dot-size),
+          transparent 1%
+        )
+        center,
+      linear-gradient($bg-color3 ($dot-space - $dot-size), transparent 1%)
+        center,
+      $dot-color;
+    background-size: $dot-space $dot-space;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .team-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 5vh;
+      padding-left: 5vw;
+      h3 {
+        font-size: 45px;
+        padding: 10vh 0 10vh 15vw;
+      }
+    }
+  }
+
+  .testimonial-container {
+    background: linear-gradient(
+          90deg,
+          $bg-color4 ($dot-space - $dot-size),
+          transparent 1%
+        )
+        center,
+      linear-gradient($bg-color4 ($dot-space - $dot-size), transparent 1%)
+        center,
+      $dot-color;
+    background-size: $dot-space $dot-space;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .testi-header {
+      h3 {
+        font-size: 35px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        z-index: 20;
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+      }
+    }
+    .test-landing-cards {
+      z-index: 10;
+      width: 80%;
+      position: absolute;
+      margin: 0 10vw;
+    }
+
+    .dancer {
+      width: 327px;
+      height: 436px;
+      position: absolute;
+      bottom: 0;
+      right: 10vw;
+      z-index: 5;
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .banner-container {
+    .banner-text {
+      h3 {
+        font-size: 75px;
+      }
+      p {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 40px;
+      }
+    }
+    .banner-logo {
+      width: 450px;
+      height: 450px;
+      position: absolute;
+      bottom: 10vh;
+      right: 0vw;
+    }
+  }
+
+  .bio-container {
+    .bio-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20vh;
+      padding-left: 10vw;
+      h3 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+
+    .gym-girl {
+      position: absolute;
+      bottom: 10vh;
+      left: 5vw;
+      width: 450px;
+      height: 450px;
+    }
+  }
+
+  .team-container {
+    background: linear-gradient(
+          90deg,
+          $bg-color3 ($dot-space - $dot-size),
+          transparent 1%
+        )
+        center,
+      linear-gradient($bg-color3 ($dot-space - $dot-size), transparent 1%)
+        center,
+      $dot-color;
+    background-size: $dot-space $dot-space;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .team-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 5vh;
+      padding-left: 5vw;
+      h3 {
+        font-size: 45px;
+        padding: 10vh 0 10vh 15vw;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .testimonial-container {
+    background: linear-gradient(
+          90deg,
+          $bg-color4 ($dot-space - $dot-size),
+          transparent 1%
+        )
+        center,
+      linear-gradient($bg-color4 ($dot-space - $dot-size), transparent 1%)
+        center,
+      $dot-color;
+    background-size: $dot-space $dot-space;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .testi-header {
+      h3 {
+        font-size: 35px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        z-index: 20;
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+      }
+    }
+    .test-landing-cards {
+      z-index: 10;
+      width: 80%;
+      position: absolute;
+      margin: 0 10vw;
+    }
+
+    .dancer {
+      width: 327px;
+      height: 436px;
+      position: absolute;
+      bottom: 0;
+      right: 10vw;
+      z-index: 5;
+    }
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2565px) {
+  .banner-container {
+    .banner-text {
+      h3 {
+        font-size: 85px;
+      }
+      p {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 32px;
+        padding: 0;
+      }
+    }
+    .banner-logo {
+      width: 450px;
+      height: 450px;
+      position: absolute;
+      bottom: 10vh;
+      right: 8vw;
+    }
+  }
+  .bio-container {
+    .bio-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-right: 20vw;
+      h3 {
+        font-size: 35px;
+        color: #ff02ff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        padding-bottom: 10vh;
+        z-index: 10;
+      }
+      p {
+        font-family: "Julius Sans One", sans-serif;
+        text-transform: lowercase;
+        font-size: 16px;
+        width: 50vw;
+        text-align: center;
+        font-weight: 600;
+        z-index: 10;
+        padding: 2vw;
+        background-color: rgba(157, 157, 163, 0.171);
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .team-container {
+    .team-text-container {
+      padding-top: 15vh;
+      padding-left: 5vw;
+      h3 {
+        font-size: 45px;
+        padding: 10vh 0 10vh 15vw;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .testimonial-container {
+    .dancer {
+      width: 327px;
+      height: 436px;
+      position: absolute;
+      bottom: 0;
+      right: 15vw;
+      z-index: 5;
+    }
+  }
+}
