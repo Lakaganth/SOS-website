@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Waypoint } from "react-waypoint";
 import { animated, useSpring } from "react-spring";
+import { Link } from "react-router-dom";
 
 import "./LandingComp.scss";
 import Runner from "../../assets/img/landingPage/runner.png";
@@ -24,14 +25,19 @@ const Team = () => {
           bottomOffset="30%"
           onEnter={() => setAnim(true)}
           onLeave={() => setAnim(false)}
-        >
-          <animated.p style={paraAnim}>
-            Our team is wonderfully supported by a group of sport enthusiasts
-            and coaches to develop skills and set a young athlete on their way
-            to achieve their goals. We guarantee they are the best on and off
-            the field!
-          </animated.p>
-        </Waypoint>
+        />
+        <animated.p style={paraAnim}>
+          Our team is wonderfully supported by a group of sport enthusiasts and
+          coaches to develop skills and set a young athlete on their way to
+          achieve their goals. We guarantee they are the best on and off the
+          field!
+        </animated.p>
+
+        <div className="landing-coach-button">
+          <Link to="/sports/coaches">
+            <button>Coaches</button>
+          </Link>
+        </div>
       </div>
       <Waypoint
         bottomOffset="30%"

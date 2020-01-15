@@ -18,6 +18,8 @@
   img {
     width: 75px;
     height: 75px;
+    margin-left: 10vw;
+    margin-bottom: 2vh;
   }
 }
 
@@ -39,7 +41,9 @@
   top: 0;
   bottom: 0;
   padding: 100px;
-  //   background: #524763;
+  padding-top: 25vh;
+  padding-left: 35vw;
+  background: #524763;
 }
 
 .nav-wrapper a {
@@ -50,10 +54,9 @@
   text-decoration: none;
   transition: 0.3s ease border;
   border-bottom: solid 4px transparent;
-}
-
-.nav-wrapper a:hover {
-  border-bottom: solid 4px #82d8d8;
+  a:hover {
+    border-bottom: solid 4px #82d8d8;
+  }
 }
 
 @media screen and (min-width: 1000px) {

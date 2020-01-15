@@ -18,17 +18,24 @@ const CoachesCard = props => {
     return str.charAt(0).toUpperCase() + str.slice(1);
   };
 
+  const coach_avatar = `url("${coach_img}")`;
+
   return (
     <div className="cards coach-card">
-      <div className="del-btn">
-        <button>X</button>
-      </div>
+      <div
+        className="coach-avatar"
+        style={{
+          background: coach_avatar,
+          backgroundSize: "cover",
+          backgroundPosition: "center center"
+        }}
+      ></div>
       <div className="coach-card-content">
-        <div className="coach-avatar"></div>
-        <h1>
+        <h2>
           {capitalize(coach_first_name)} {capitalize(coach_last_name)}
-        </h1>
-        <h1>{capitalize(coach_sport)}</h1>
+        </h2>
+        <h3>{capitalize(coach_sport)}</h3>
+        <p>{coach_desc}</p>
       </div>
     </div>
   );

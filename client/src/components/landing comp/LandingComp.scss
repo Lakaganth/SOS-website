@@ -181,12 +181,14 @@ $dot-space: 5px;
       border-radius: 20px;
     }
   }
-
+  .landing-coach-button {
+    z-index: 10;
+  }
   .runner {
     position: absolute;
-    max-width: 473px;
-    max-height: 604px;
-    bottom: 0;
+    width: 350px;
+    height: 350px;
+    bottom: 10vh;
     right: 0;
     z-index: 5;
   }
