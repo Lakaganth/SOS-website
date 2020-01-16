@@ -42,8 +42,8 @@ import { AdminTestimonial } from "./components/testimonials/AdminTestimonial";
 
 // Server Connection
 const client = new ApolloClient({
-  // uri: "https://schoolofsports.herokuapp.com/graphql"
-  uri: "http://localhost:5000/graphql"
+  uri: "https://schoolofsports.herokuapp.com/graphql"
+  // uri: "http://localhost:5000/graphql"
 });
 
 const App = () => {
