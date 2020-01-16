@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./LandingPage.scss";
-import Partners from "./Partners";
 import Footer from "../../components/footer/Footer";
-import Testimonials from "../../components/testimonials/Testimonials";
-import TestimonialCard from "./../../components/testimonials/TestimonialCard";
 // import MainLogo from "../../assets/img/bb.png";
 import TestimonialImage from "../../assets/img/ball-shoot.png";
 import Banner from "../../components/landing comp/Banner";

@@ -33,6 +33,7 @@
     "graphql": "^14.4.2",
     "graphql-iso-date": "^3.6.1",
     "graphql-scalars": "^1.0.0",
+    "history": "^4.10.1",
     "mongoose": "^5.8.7",
     "react-gsap": "^1.2.0",
     "react-spring": "^8.0.27",

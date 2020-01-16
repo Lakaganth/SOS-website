@@ -10,7 +10,7 @@ const SportCard = props => {
     <div className={`card-sport sport-card-wide ${sport_name}`}>
       <h2 className="sports-header text-center">{sport_name.toUpperCase()}</h2>
       <Link to={`/sports/coaches/${_id}`}>
-        <button> Coaches</button>
+        <button className="coach-button"> Coaches</button>
       </Link>
     </div>
   );

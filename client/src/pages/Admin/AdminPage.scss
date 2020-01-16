@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 50vh;
   h1 {
     font-size: 1.5em;
     margin-bottom: 2vh;
@@ -17,5 +18,11 @@
   a {
     color: aqua;
     font-size: 1.3em;
+    padding-bottom: 5vh;
   }
+}
+
+.admin-signout {
+  width: 30%;
+  margin: 0 auto;
 }

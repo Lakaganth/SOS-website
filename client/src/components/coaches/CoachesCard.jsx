@@ -1,6 +1,4 @@
 import React from "react";
-import { graphql } from "react-apollo";
-import { Mutation } from "react-apollo";
 
 import "./Coaches.scss";
 
@@ -9,7 +7,7 @@ const CoachesCard = props => {
     coach_first_name,
     coach_last_name,
     coach_sport,
-    _id,
+
     coach_img,
     coach_desc
   } = props.coach;

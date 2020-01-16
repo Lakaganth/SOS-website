@@ -11,7 +11,7 @@ import "./Coaches.scss";
 const Coaches = ({ match }) => {
   const { _id } = match.params;
   const { user } = React.useContext(FirebaseContext);
- 
+
   if (user) {
     return (
       <div className="coach-card sport-card">
@@ -23,7 +23,7 @@ const Coaches = ({ match }) => {
             if (error) console.log(error);
 
             const { coach } = data.sport;
-           
+
             return coach.map(c => {
               return <CoachesCard key={c._id} coach={c} />;
             });
@@ -33,7 +33,7 @@ const Coaches = ({ match }) => {
     );
   } else {
     return (
-      <div className="coach-card sport-card">
+      <div className="sport-card">
         <Query query={GET_COACHES_FROM_SPORT} variables={{ _id }}>
           {({ data, loading, error }) => {
             if (loading) {
@@ -42,7 +42,7 @@ const Coaches = ({ match }) => {
             if (error) console.log(error);
 
             const { coach } = data.sport;
-            
+
             return coach.map(c => {
               return <CoachesCard key={c._id} coach={c} />;
             });

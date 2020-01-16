@@ -16,7 +16,7 @@ const Bio = () => {
   });
   const paraAnim = useSpring({
     opacity: anim ? 1 : 0,
-    transform: anim ? "translate3d(0,0,0)" : "translate3d(80%,0,0)",
+    transform: anim ? "translate3d(0,0,0)" : "translate3d(90%,0,0)",
     scale: anim ? 1.5 : 1
   });
 
@@ -27,7 +27,7 @@ const Bio = () => {
         <h3>An inclusive children's sports academy</h3>
 
         <Waypoint
-          bottomOffset="30%"
+          bottomOffset="50%"
           onEnter={() => setAnim(true)}
           onLeave={() => setAnim(false)}
         />

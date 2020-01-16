@@ -3,9 +3,15 @@ import { Link } from "react-router-dom";
 import FirebaseContext from "./../../context/firebase/firebaseContext";
 
 import "./AdminPage.scss";
+import firebase from "./../../context/firebase/FirebaseState";
 
 const AdminPage = props => {
   const { user } = React.useContext(FirebaseContext);
+
+  const handleSignOut = () => {
+    firebase.logout();
+    props.history.push("/");
+  };
 
   if (!user) {
     return <h1>Loading</h1>;
@@ -27,6 +33,16 @@ const AdminPage = props => {
         <div className="cards admin-card">
           <h1>Gallery</h1>
           <Link to="/admin/add-gallery">Add Gallery</Link>
+        </div>
+        <div className="cards admin-card">
+          <h1>Testimonials</h1>
+          <Link to="/admin/add-testimonial">Add Testimonial</Link>
+          <Link to="/admin/testimonials">Testimonials</Link>
+        </div>
+        <div></div>
+        <div></div>
+        <div className="admin-signout">
+          <button onClick={handleSignOut}>Sign OUT</button>
         </div>
       </div>
     );

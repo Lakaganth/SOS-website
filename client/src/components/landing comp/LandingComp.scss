@@ -60,11 +60,18 @@ $dot-space: 5px;
     }
   }
   .banner-logo {
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     position: absolute;
-    bottom: 20vh;
-    right: -20vw;
+    bottom: 10vh;
+    right: -10vw;
+  }
+  .banner-btn {
+    width: 50%;
+    margin: 0 auto;
+    button {
+      border: 3px solid rgb(182, 31, 31);
+    }
   }
 }
 
@@ -101,7 +108,7 @@ $dot-space: 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 20vh;
+    padding-top: 10vh;
     z-index: 10;
     h3 {
       font-size: 35px;
@@ -115,20 +122,24 @@ $dot-space: 5px;
     p {
       font-family: "Julius Sans One", sans-serif;
       text-transform: lowercase;
-      font-size: 16px;
-      width: 60vw;
+      font-size: 14px;
+      width: 50vw;
       text-align: center;
       font-weight: 600;
       // z-index: 10;
-      padding: 5vw;
+      padding: 2.5vw;
       background-color: rgba(157, 157, 163, 0.171);
       border-radius: 20px;
+      padding-right: 10vw;
     }
     .landing-gal-buton {
       width: 150px;
       z-index: 40;
       margin-top: 5vh;
       margin-right: 15vw;
+      button {
+        background-color: #1e087e;
+      }
     }
   }
 
@@ -183,6 +194,13 @@ $dot-space: 5px;
   }
   .landing-coach-button {
     z-index: 10;
+    width: 30%;
+    margin-left: 12vw;
+    button {
+      background-color: #0c6164;
+      font-weight: 900;
+      border: #52ad16 2px solid;
+    }
   }
   .runner {
     position: absolute;
@@ -270,7 +288,6 @@ $dot-space: 5px;
         font-size: 75px;
       }
       p {
-        font-family: "Julius Sans One", sans-serif;
         font-size: 40px;
       }
     }
@@ -280,6 +297,9 @@ $dot-space: 5px;
       position: absolute;
       bottom: 10vh;
       right: -5vw;
+    }
+    .banner-btn {
+      width: 20%;
     }
   }
 
@@ -399,6 +419,13 @@ $dot-space: 5px;
       position: absolute;
       bottom: 10vh;
       right: 0vw;
+    }
+    .banner-btn {
+      width: 20%;
+      margin: 0 auto;
+      button {
+        border: 3px solid rgb(133, 131, 131);
+      }
     }
   }
 

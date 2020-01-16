@@ -34,8 +34,8 @@ app.use(
   "/graphql",
   graphqlHTTP({
     schema: graphqlSchema,
-    rootValue: graphqlResolver
-    // graphiql: true
+    rootValue: graphqlResolver,
+    graphiql: true
   })
 );
 

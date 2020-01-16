@@ -51,6 +51,10 @@ input {
   background-repeat: no-repeat; /* Do not repeat the image */
   // background-position: left top;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 //Sports Card BG
@@ -86,10 +90,47 @@ input {
     url("../../assets/img/sport-card-bgimg/swimming-card-bg.jpg");
 }
 
-@media screen and (min-width: 1000px) {
+.coach-button {
+  all: unset;
+  background: transparent;
+  border: 2px solid #11a1b4;
+  padding: 1em;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  width: 85px;
+  margin: 0.5em auto;
+  -webkit-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 1000px) {
   .sport-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .sports-header {
+    padding: 2em;
+  }
+  .card-sport {
+    height: 50vh;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .sport-card-wide {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+  .sport-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
   .sports-header {

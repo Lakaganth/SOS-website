@@ -94,25 +94,41 @@ input {
 //   }
 // }
 
-@media (min-width: 1000px) {
+// Tablet
+
+// @media (min-width: 767px) and (max-width: 1023px) {
+//   .sport-card {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 50px;
+//   }
+//   .cards {
+//     height: 100vh;
+//     width: 100%;
+//     background: #0c0b44;
+//     justify-self: center;
+//   }
+// }
+
+// @media (min-width: 1000px) {
+//   .sport-card {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 50px;
+//   }
+//   .cards {
+//     height: 100vh;
+//     width: 100%;
+//     background: #0c0b44;
+//     justify-self: center;
+//   }
+// }
+
+// // Laptop
+@media (min-width: 1024px) and (max-width: 1444px) {
   .sport-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-  }
-  .cards {
-    height: 100vh;
-    width: 100%;
-    background: #0c0b44;
-    justify-self: center;
-  }
-}
-
-// // Laptop
-@media (min-width: 1025px) and (max-width: 1444px) {
-  .sport-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
   }
   .cards {
@@ -126,11 +142,11 @@ input {
 @media (min-width: 1441px) {
   .sport-card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
   }
   .cards {
-    height: 75vh;
+    height: 50vh;
     width: 100%;
     background: #0c0b44;
     justify-self: center;

@@ -37,6 +37,8 @@ import GalleryImages from "./components/gallery/GalleryImages";
 import AddGallery from "./components/gallery/AddGallery";
 import AddGalleryLinks from "./components/gallery/AddGalleryLinks";
 import HeaderNav from "./components/header/HeaderNav";
+import { TestimonialForm } from "./components/testimonials/TestimonialForm";
+import { AdminTestimonial } from "./components/testimonials/AdminTestimonial";
 
 // Server Connection
 const client = new ApolloClient({
@@ -87,6 +89,16 @@ const App = () => {
                 <Route path="/admin/add-coach" exact component={Add_coaches} />
                 <Route path="/admin/add-sport" exact component={AddSport} />
                 <Route path="/admin/add-gallery" exact component={AddGallery} />
+                <Route
+                  path="/admin/testimonials"
+                  exact
+                  component={AdminTestimonial}
+                />
+                <Route
+                  path="/admin/add-testimonial"
+                  exact
+                  component={TestimonialForm}
+                />
                 <Route
                   path="/admin/add-gallery-link/:id"
                   exact

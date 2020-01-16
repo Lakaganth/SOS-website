@@ -228,3 +228,33 @@ export const DELETE_GALLERY = gql`
     deleteGallery(id: $id)
   }
 `;
+
+export const CREATE_NEW_TESTIMONIAL = gql`
+  mutation testimonial(
+    $comments: String!
+    $commentor_name: String!
+    $client_name: String!
+    $client_address: String!
+  ) {
+    addTestimonials(
+      testimonialInput: {
+        comments: $comments
+        commentor_name: $commentor_name
+        client_name: $client_name
+        client_address: $client_address
+      }
+    ) {
+      _id
+      comments
+      commentor_name
+      client_name
+      client_address
+    }
+  }
+`;
+
+export const DELETE_TESTIMONIAL = gql`
+  mutation delete($id: ID!) {
+    deleteTestimonials(id: $id)
+  }
+`;
