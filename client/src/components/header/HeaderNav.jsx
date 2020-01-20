@@ -64,6 +64,9 @@ const HeaderNav = ({ showLogo }) => {
           <NavLink to="/contact" onClick={() => setNavOpen(!isNavOpen)}>
             Contact
           </NavLink>
+          <NavLink to="/admin" onClick={() => setNavOpen(!isNavOpen)}>
+            Admin
+          </NavLink>
         </animated.div>
       </div>
       <div className="wide-nav">
@@ -78,6 +81,7 @@ const HeaderNav = ({ showLogo }) => {
           <NavLink to="/sports">Sports</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/admin">Admin</NavLink>
         </div>
       </div>
     </React.Fragment>

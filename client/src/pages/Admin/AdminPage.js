@@ -4,6 +4,7 @@ import FirebaseContext from "./../../context/firebase/firebaseContext";
 
 import "./AdminPage.scss";
 import firebase from "./../../context/firebase/FirebaseState";
+import Signin from "./../../components/auth/Signin";
 
 const AdminPage = props => {
   const { user } = React.useContext(FirebaseContext);
@@ -14,7 +15,7 @@ const AdminPage = props => {
   };
 
   if (!user) {
-    return <h1>Loading</h1>;
+    return <Signin></Signin>;
   } else {
     return (
       <div className="sport-card admin-page">

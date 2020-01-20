@@ -3,6 +3,7 @@ import firebase from "./../../context/firebase/FirebaseState";
 
 import "./Auth.scss";
 import Admin from "../../assets/img/admin.png";
+import history from "./../../history";
 
 const Signin = props => {
   const [user, setUser] = useState({
@@ -29,7 +30,7 @@ const Signin = props => {
     e.preventDefault();
     const { email, password } = user;
     loginuser(email, password);
-    props.history.push("/admin");
+    history.push("/admin");
     console.log("Signed in");
   };
 
