@@ -29,7 +29,7 @@ const Bio = () => {
         <Waypoint
           bottomOffset="50%"
           onEnter={() => setAnim(true)}
-          onLeave={() => setAnim(false)}
+          // onLeave={() => setAnim(false)}
         />
         <animated.p style={paraAnim}>
           School Of Sports (SOS) believes in empowering children by giving an
@@ -48,7 +48,7 @@ const Bio = () => {
       <Waypoint
         bottomOffset="30%"
         onEnter={() => setAnim(true)}
-        onLeave={() => setAnim(false)}
+        // onLeave={() => setAnim(false)}
       />
       <animated.div className="gym-girl" style={girlAnim}>
         <img src={Gymnasium} alt="Aerobic girl" />

@@ -5,7 +5,7 @@ import FirebaseContext from "./../../context/firebase/firebaseContext";
 import DELETE from "../../assets/img/cancel.svg";
 import { Mutation } from "react-apollo";
 import "./Gallery.scss";
-import DelGalleryMutation from "../../utils/DeleteGallery";
+// import DelGalleryMutation from "../../utils/DeleteGallery";
 import { DELETE_GALLERY } from "../../queries";
 
 const GalleryCards = props => {

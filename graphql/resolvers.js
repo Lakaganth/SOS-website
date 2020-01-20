@@ -255,7 +255,7 @@ module.exports = {
   },
 
   deleteTestimonials: async ({ id }, req) => {
-    console.log(typeof id);
+   
 
     const test = await Testimonial.findById(id);
 

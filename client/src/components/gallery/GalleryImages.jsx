@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { Query } from "react-apollo";
 import { GET_GALLERY } from "../../queries";
-import GalleryImageCard from "./GalleryImageCard";
+// import GalleryImageCard from "./GalleryImageCard";
 
 import { Gallery, GalleryImage } from "react-gesture-gallery";
 
@@ -21,7 +21,7 @@ const GalleryImages = ({ match }) => {
           }
           if (error) return console.log(error);
 
-          const { gallery_name, galleryImages } = data.gallery;
+          const { galleryImages } = data.gallery;
 
           return (
             <div className="gal-image-container">

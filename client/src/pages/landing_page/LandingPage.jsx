@@ -3,7 +3,7 @@ import React from "react";
 import "./LandingPage.scss";
 import Footer from "../../components/footer/Footer";
 // import MainLogo from "../../assets/img/bb.png";
-import TestimonialImage from "../../assets/img/ball-shoot.png";
+// import TestimonialImage from "../../assets/img/ball-shoot.png";
 import Banner from "../../components/landing comp/Banner";
 import Bio from "../../components/landing comp/Bio";
 import Team from "../../components/landing comp/Team";

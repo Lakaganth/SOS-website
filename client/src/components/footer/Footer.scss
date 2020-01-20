@@ -1,3 +1,10 @@
+.footer-grid {
+  padding-top: 3vh;
+  a {
+    cursor: pointer;
+  }
+}
+
 .footer-email {
   height: 70px;
   width: 70px;
@@ -19,28 +26,55 @@
 
   h3 {
     padding-top: 5%;
-    padding-left: 5%;
+    // padding-left: 5%;
   }
 }
 
 .social-footer-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 2vh 5vw;
+}
+.footer-insta {
+  margin-right: 15vw;
+}
+.footer-copy {
   margin: 2vh 0;
 }
+// Tablet
+@media (min-width: 426px) and (max-width: 768px) {
+  .social-footer-icons {
+    margin: 2vh 15vw;
+  }
+}
 
-@media screen and (min-width: 1000px) {
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10rem;
-    justify-self: center;
-    align-self: center;
-    padding-bottom: 2vh;
+// Laptop
+@media (min-width: 769px) and (max-width: 1024px) {
+  .social-footer-icons {
+    margin: 2vh 18vw;
   }
 
-  .contacts-container {
-    padding-top: 10vh;
-    padding-right: 5vw;
+  .footer-copy {
+    margin: 2vh 0;
+  }
+}
+
+// Desktop
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .social-footer-icons {
+    margin: 2vh 20vw;
+  }
+  .footer-insta {
+    margin-right: 11vw;
+  }
+}
+
+// 4K
+@media screen and (min-width: 1441px) {
+  .social-footer-icons {
+    margin: 2vh 22vw;
+  }
+  .footer-insta {
+    margin-right: 5vw;
   }
 }

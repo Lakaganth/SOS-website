@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
-import { Waypoint } from "react-waypoint";
+// import { Waypoint } from "react-waypoint";
 import { NavLink } from "react-router-dom";
 
 import "./HeaderNav.scss";

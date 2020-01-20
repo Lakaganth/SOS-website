@@ -11,7 +11,7 @@ const CoachesCard = props => {
     coach_img,
     coach_desc
   } = props.coach;
-  console.log(props);
+
   const capitalize = str => {
     return str.charAt(0).toUpperCase() + str.slice(1);
   };

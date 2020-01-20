@@ -27,8 +27,8 @@ const EventsDetail = ({ match, history }) => {
             event_name,
             rules,
             reg_rules,
-            event_date,
-            reg_close,
+            // event_date,
+            // reg_close,
             sport
           } = data.event;
 

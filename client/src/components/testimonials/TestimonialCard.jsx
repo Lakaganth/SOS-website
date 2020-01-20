@@ -31,7 +31,7 @@ const TestimonialCard = props => {
           <Mutation mutation={DELETE_TESTIMONIAL} variables={{ id }}>
             {(deleteTestimonials, { loading, data, error }) => {
               return (
-                <div>
+                <div className="testi-del-btn">
                   <button onClick={e => handleDel(e, deleteTestimonials)}>
                     Delete
                   </button>

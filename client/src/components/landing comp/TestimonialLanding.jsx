@@ -27,7 +27,7 @@ const TestimonialLanding = () => {
       <Waypoint
         // bottomOffset="30%"
         onEnter={() => setAnim(true)}
-        onLeave={() => setAnim(false)}
+        // onLeave={() => setAnim(false)}
       />
       <animated.div style={testiAnim} className="test-landing-cards">
         <Testimonials></Testimonials>
@@ -35,7 +35,7 @@ const TestimonialLanding = () => {
       <Waypoint
         // bottomOffset="30%"
         onEnter={() => setAnim(true)}
-        onLeave={() => setAnim(false)}
+        // onLeave={() => setAnim(false)}
       />
       <animated.div className="dancer" style={dancerAnim}>
         <img src={Dancer} alt="Dancer" />

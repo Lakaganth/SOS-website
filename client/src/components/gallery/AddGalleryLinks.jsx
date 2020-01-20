@@ -13,7 +13,7 @@ const AddGalleryLinks = ({ match }) => {
     gallery_image_link: ""
   });
 
-  const { gallery_id, gallery_image_link } = newGLink;
+  const { gallery_image_link } = newGLink;
 
   const onChange = e => {
     setNewGLink({
@@ -26,7 +26,7 @@ const AddGalleryLinks = ({ match }) => {
     e.preventDefault();
 
     createGalleryLinks().then(({ data }) => {
-      console.log(data);
+      // console.log(data);
     });
     setNewGLink({
       gallery_image_link: ""

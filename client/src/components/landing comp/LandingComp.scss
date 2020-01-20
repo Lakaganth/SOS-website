@@ -67,7 +67,7 @@ $dot-space: 5px;
     right: -10vw;
   }
   .banner-btn {
-    width: 50%;
+    width: 150px;
     margin: 0 auto;
     button {
       border: 3px solid rgb(182, 31, 31);
@@ -194,7 +194,7 @@ $dot-space: 5px;
   }
   .landing-coach-button {
     z-index: 10;
-    width: 30%;
+    width: 150px;
     margin-left: 12vw;
     button {
       background-color: #0c6164;
@@ -424,7 +424,7 @@ $dot-space: 5px;
       width: 20%;
       margin: 0 auto;
       button {
-        border: 3px solid rgb(133, 131, 131);
+        border: 3px solid rgb(182, 31, 31);
       }
     }
   }
@@ -549,6 +549,13 @@ $dot-space: 5px;
       bottom: 10vh;
       right: 8vw;
     }
+    .banner-btn {
+      width: 30;
+      margin: 0 auto;
+      button {
+        border: 3px solid rgb(182, 31, 31);
+      }
+    }
   }
   .bio-container {
     .bio-text-container {
@@ -556,8 +563,9 @@ $dot-space: 5px;
       flex-direction: column;
       align-items: flex-end;
       padding-right: 20vw;
+
       h3 {
-        font-size: 35px;
+        font-size: 2.8rem;
         color: #ff02ff;
         text-transform: uppercase;
         text-align: center;
@@ -569,7 +577,7 @@ $dot-space: 5px;
         font-family: "Julius Sans One", sans-serif;
         text-transform: lowercase;
         font-size: 16px;
-        width: 50vw;
+        width: 30vw;
         text-align: center;
         font-weight: 600;
         z-index: 10;
@@ -577,6 +585,13 @@ $dot-space: 5px;
         background-color: rgba(157, 157, 163, 0.171);
         border-radius: 20px;
       }
+    }
+    .gym-girl {
+      position: absolute;
+      bottom: 15vh;
+      left: 15vw;
+      width: 550px;
+      height: 550px;
     }
   }
 

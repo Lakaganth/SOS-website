@@ -24,7 +24,7 @@ const Team = () => {
         <Waypoint
           bottomOffset="30%"
           onEnter={() => setAnim(true)}
-          onLeave={() => setAnim(false)}
+          // onLeave={() => setAnim(false)}
         />
         <animated.p style={paraAnim}>
           Our team is wonderfully supported by a group of sport enthusiasts and
@@ -42,7 +42,7 @@ const Team = () => {
       <Waypoint
         bottomOffset="30%"
         onEnter={() => setAnim(true)}
-        onLeave={() => setAnim(false)}
+        // onLeave={() => setAnim(false)}
       >
         <animated.div className="runner" style={runnerAnim}>
           <img src={Runner} alt="Running girl" />

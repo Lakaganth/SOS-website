@@ -17,7 +17,7 @@ import AboutPage from "./pages/About/AboutPage";
 import ContactsPage from "./pages/Contact/ContactsPage";
 
 //Components Import
-import Header from "./components/header/Header";
+// import Header from "./components/header/Header";
 import Sports from "./components/sports/Sports";
 
 import AddSport from "./components/sports/AddSport";
