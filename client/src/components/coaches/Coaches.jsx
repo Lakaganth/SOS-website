@@ -14,7 +14,7 @@ const Coaches = ({ match }) => {
 
   if (user) {
     return (
-      <div className="coach-card sport-card">
+      <div className=" sport-card coach-container">
         <Query query={GET_COACHES_FROM_SPORT} variables={{ _id }}>
           {({ data, loading, error }) => {
             if (loading) {
@@ -33,7 +33,7 @@ const Coaches = ({ match }) => {
     );
   } else {
     return (
-      <div className="sport-card">
+      <div className="sport-card  coach-container">
         <Query query={GET_COACHES_FROM_SPORT} variables={{ _id }}>
           {({ data, loading, error }) => {
             if (loading) {
