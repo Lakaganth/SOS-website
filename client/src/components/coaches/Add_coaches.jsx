@@ -6,6 +6,7 @@ import { Mutation } from "react-apollo";
 import { CREATE_NEW_COACH_ADMIN } from "../../queries";
 
 import "./Coaches.scss";
+import history from "./../../history";
 
 const AddCoaches = props => {
   const { user } = React.useContext(FirebaseContext);
@@ -55,7 +56,7 @@ const AddCoaches = props => {
       coach_sport: "",
       coach_desc: ""
     });
-    props.history.push("/sports");
+    history.push("/sports");
   };
 
   if (!user) {

@@ -4,6 +4,7 @@ import { graphql } from "react-apollo";
 import { Mutation } from "react-apollo";
 import { CREATE_NEW_GALLERY } from "../../queries";
 import FirebaseContext from "./../../context/firebase/firebaseContext";
+import history from "./../../history";
 
 const AddGallery = props => {
   const { user } = React.useContext(FirebaseContext);
@@ -32,7 +33,7 @@ const AddGallery = props => {
       gallery_description: "",
       gallery_date: ""
     });
-    props.history.push("/gallery");
+    history.push("/gallery");
   };
 
   if (!user) {

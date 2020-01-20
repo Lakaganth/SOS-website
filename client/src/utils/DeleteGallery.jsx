@@ -5,7 +5,7 @@ import { DELETE_GALLERY } from "../queries";
 
 const DeleteGallery = props => {
   const { id } = props;
-  console.log(id);
+
   return (
     <Mutation mutation={DELETE_GALLERY} variables={{ id }}>
       {(deleteGallery, { loading, data, error }) => {

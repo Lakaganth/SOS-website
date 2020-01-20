@@ -5,13 +5,14 @@ import FirebaseContext from "./../../context/firebase/firebaseContext";
 import "./AdminPage.scss";
 import firebase from "./../../context/firebase/FirebaseState";
 import Signin from "./../../components/auth/Signin";
+import history from "./../../history";
 
 const AdminPage = props => {
   const { user } = React.useContext(FirebaseContext);
 
   const handleSignOut = () => {
     firebase.logout();
-    props.history.push("/");
+    history.push("/");
   };
 
   if (!user) {
